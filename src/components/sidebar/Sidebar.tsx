@@ -5,11 +5,10 @@ import SidebarSteps from "../sidebarSteps/SidebarSteps";
 
 interface Props{
   currentStep : number,
-  handleStepChange : (step : number) => void
 }
 
 
-const Sidebar = ({currentStep,handleStepChange} : Props) => {
+const Sidebar = ({currentStep} : Props) => {
   return (
     <>
       <div className={styled.div}>
@@ -24,7 +23,7 @@ const Sidebar = ({currentStep,handleStepChange} : Props) => {
           alt="side-image"
           className={[styled.sidebarImage, styled.largerSidebarImage].join(" ")}
         />
-        <SidebarSteps currentStep={currentStep} handleStepChange={handleStepChange}></SidebarSteps>
+        <SidebarSteps currentStep={currentStep}></SidebarSteps>
       </div>
     </>
   );

@@ -58,7 +58,6 @@ const App = () => {
     <div className="multiStepFormContainer">
       <Sidebar
         currentStep={step === 5 ? 4 : step}
-        handleStepChange={(step) => setStep(step)}
       ></Sidebar>
       <MultiStepFormContainer
         step={step}
