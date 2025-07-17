@@ -1,0 +1,20 @@
+.btn{
+    width:40px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: rgba(var(--blue-950));
+    padding: 4px;
+    cursor: pointer;
+}
+
+.btnBall{
+    width: 11.5px;
+    height: 11.5px;
+    border-radius: 100%;
+    transition: all 0.3s;
+    background-color: rgba(var(--white));
+}
+
+.btnActive .btnBall{
+    transform: translateX(20px);
+}

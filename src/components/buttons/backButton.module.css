@@ -1,0 +1,14 @@
+.btn{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-weight: 1.4rem;
+    color: rgba(var(--grey-500));
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    color: rgba(var(--blue-950));
+}

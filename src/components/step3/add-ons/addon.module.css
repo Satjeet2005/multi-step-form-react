@@ -1,0 +1,57 @@
+.addonWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .addonWrapper {
+    margin-top: 30px;
+  }
+}
+
+.addon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid rgba(var(--purple-200));
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.addonActive {
+  border: 1px solid rgba(var(--purple-600));
+  background-color: rgba(var(--blue-50));
+}
+
+.addonHeading {
+  font-size: 1.4rem;
+  color: rgba(var(--blue-950));
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .addonHeading {
+    font-size: 1.5rem;
+  }
+}
+
+.addonDescription {
+  font-size: 1.3rem;
+  color: rgba(var(--grey-500));
+  margin-top: 5px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: rgba(var(--purple-600));
+}
+
+.addonPrice {
+  color: rgba(var(--purple-600));
+  font-size: 1.3rem;
+  margin-left: auto;
+}

@@ -1,0 +1,80 @@
+.errorText{
+    font-size: 1.3rem;
+    color: rgba(var(--red-500));
+    font-weight: 600;
+    text-wrap: wrap;
+    margin-left: auto;
+    text-align: left;
+    width: fit-content;
+}
+
+.errorState{
+    border: 2px solid rgba(var(--red-500)) !important;
+}
+
+form{
+    width: 100%;
+}
+
+.formField{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+@media screen and (min-width:768px){
+    .formField{
+        margin-top: 22px;
+
+    }
+}
+
+.formField label{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgba(var(--blue-950));
+}
+
+@media screen and (min-width:768px){
+    .formField label{
+        font-size: 1.4rem;
+    }
+}
+
+.formField input{
+    height: 40px;
+    border: 2px solid rgba(var(--grey-500), 0.2);
+    background-color: transparent;
+    border-radius:5px;
+    font-weight: 900;
+    margin-top: 4px;
+    padding-left: 16px;
+    font-size: 1.4rem;
+    color: rgba(var(--blue-950));
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px){
+    .formField input{
+        margin-top: 6px;
+        border-radius: 8px;
+        height: 46px;
+        font-size: 1.5rem;
+    }
+}
+
+.formField input::placeholder{
+    color: rgba(var(--grey-500));
+}
+
+.formField input:focus{
+    border: 2px solid rgba(var(--purple-600));
+}
+
+.formFieldHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* text-wrap: nowrap; */
+}

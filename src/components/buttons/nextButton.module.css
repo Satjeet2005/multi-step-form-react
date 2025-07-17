@@ -1,0 +1,29 @@
+
+
+.btn{
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    color: rgba(var(--white));
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: auto;
+}
+
+.btnBlue{
+    background-color: rgba(var(--blue-950));
+}
+
+.btnBlue:hover{
+    background-color: #064594;
+}
+
+.btnPurple{
+    background-color: rgba(var(--purple-600));
+}
+
+.btnPurple:hover{
+    opacity: 0.7;
+}

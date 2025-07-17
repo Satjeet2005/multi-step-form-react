@@ -1,0 +1,83 @@
+
+
+.stepIndicatorWrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 35px;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (min-width:768px){
+    .stepIndicatorWrapper{
+        flex-direction: column;
+        margin-left: 30px;
+        gap: 30px;
+        left: 0;
+        transform: translateX(0);
+    }
+}
+
+.stepIndicator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid rgba(var(--white));
+    color: rgba(var(--white));
+    font-weight: 600;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+
+.stepIndicatorActive{
+    background-color: rgba(var(--blue-200));
+    color: rgba(var(--blue-950));
+    border: none;
+}
+
+.step{
+    display: flex;
+    align-items: center;
+}
+
+.sidebarStepHeading{
+    display: none;
+}
+
+.sidebarStepDescription{
+    display: none;
+}
+    
+@media screen and (min-width:768px){
+    .step{
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+    
+    .sidebarStepHeading{
+        display: block;
+        text-transform: uppercase;
+        margin: 0;
+        color: rgba(var(--purple-200));
+        font-size: 1.1rem;
+    }
+    
+    .sidebarStepDescription{
+        display: block;
+        text-transform: uppercase;
+        margin: 6px 0 0 0;
+        color: rgba(var(--white));
+        font-weight: 500;
+        font-size: 1.2rem;
+        letter-spacing: 1.5px;
+    }
+
+}

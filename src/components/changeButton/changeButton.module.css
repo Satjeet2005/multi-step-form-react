@@ -1,0 +1,11 @@
+.btn{
+    font-size: 1.4rem;
+    text-decoration: underline;
+    color: rgba(var(--grey-500));
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.btn:hover{
+    color: rgba(var(--purple-600));
+}
